@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaylee Fitzpatrick</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <button
+          id="mobile-nav-toggle"
+          class="mobile-nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="topbar-nav"
+        >
+          &#9776;
+        </button>
+
+        <ul class="nav" id="topbar-nav">
+          <li>
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li>
+            <a href="#contactme" id="contact-me-link" class="nav-link">
+              Contact Me
+            </a>
+          </li>
+        </ul>
+
+        <div class="topbar-right">
+          <div class="tooltip">
+            <div class="icon-button" id="copy-email">
+              <img
+                src="./src/images/gmail.svg"
+                alt=""
+                height="40"
+                width="40"
+                draggable="false"
+              />
+            </div>
+            <span class="tooltip-text"> Copy Email </span>
+          </div>
+
+          <div class="tooltip">
+            <div class="icon-button">
+              <a
+                href="https://github.com/nerdyfitzy"
+                target="_blank"
+                rel="noreferrer"
+                class="github-link"
+              >
+                <img
+                  src="./src/images/github-mark-white.png"
+                  alt="Github Logo"
+                  height="40"
+                  width="40"
+                  draggable="false"
+                />
+              </a>
+            </div>
+            <span class="tooltip-text"> My Github </span>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div class="hero-inner">
+          <h1 class="hero-title">I'm Kaylee Fitzpatrick</h1>
+          <p class="hero-text">
+            I am a fullstack software engineer and web developer currently
+            studying at Fordham University. I am proficient in many languages
+            and technologies and am looking for work.
+          </p>
+        </div>
+      </div>
+
+      <div class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-row">
+          <!-- Project: purpl -->
+          <div class="project-card">
+            <h3 class="project-title">purpl</h3>
+            <div class="project-image-wrap">
+              <img
+                src="./src/images/purpl.png"
+                alt="purpl"
+                draggable="false"
+                class="project-image"
+              />
+            </div>
+            <p class="project-desc">
+              The 2.0 version of purpl, an app meant to aid resellers in their
+              day-to-day work. A completely refactored codebase from the
+              original, it contained tools for managing inventory, monitoring
+              websites, analyzing market data, and more.
+            </p>
+            <div class="project-tech-row">
+              <img
+                src="./src/images/react.svg"
+                alt="react"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/js.svg"
+                alt="js"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/tailwind.svg"
+                alt="tailwind"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+            </div>
+            <div class="project-github">
+              <a
+                href="https://github.com/nerdyfitzy/purpl-react"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./src/images/github-mark-white.png"
+                  alt="Github Logo"
+                  width="30"
+                  height="30"
+                  draggable="false"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: bettervods -->
+          <div class="project-card">
+            <h3 class="project-title">bettervods</h3>
+            <div class="project-image-wrap">
+              <img
+                src="./src/images/bettervods.png"
+                alt="bettervods"
+                draggable="false"
+                class="project-image"
+              />
+            </div>
+            <p class="project-desc">
+              A desktop app that downloads, cuts, converts, and plays Twitch
+              VODs to make reviewing them easier. It downloads and converts the
+              streaming .m3u8 file to a readable .mkv file then allows the user
+              to use its built-in video player to watch through it.
+            </p>
+            <div class="project-tech-row">
+              <img
+                src="./src/images/react.svg"
+                alt="react"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/ts.svg"
+                alt="ts"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/rust.svg"
+                alt="rust"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+            </div>
+            <div class="project-github">
+              <a
+                href="https://github.com/nerdyfitzy/bettervods-rs"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./src/images/github-mark-white.png"
+                  alt="Github Logo"
+                  width="30"
+                  height="30"
+                  draggable="false"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: Druggedfoxd -->
+          <div class="project-card">
+            <h3 class="project-title">Druggedfoxd</h3>
+            <div class="project-image-wrap">
+              <img
+                src="./src/images/druggedfoxd.png"
+                alt="Druggedfoxd"
+                draggable="false"
+                class="project-image"
+              />
+            </div>
+            <p class="project-desc">
+              A publicly available project to organize and filter through over
+              750 Druggedfox lessons. Includes user authentication and
+              bookmarking features to make finding videos easier.
+            </p>
+            <div class="project-tech-row">
+              <img
+                src="./src/images/nextjs.svg"
+                alt="nextjs"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/ts.svg"
+                alt="ts"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/tailwind.svg"
+                alt="tailwind"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+              <img
+                src="./src/images/mysql.svg"
+                alt="mysql"
+                height="25"
+                width="25"
+                draggable="false"
+              />
+            </div>
+            <div class="project-github">
+              <a
+                href="https://github.com/nerdyfitzy/druggedfoxd"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./src/images/github-mark-white.png"
+                  alt="Github Logo"
+                  width="30"
+                  height="30"
+                  draggable="false"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-row">
+          <!-- Language: JavaScript -->
+          <div class="language-card">
+            <img
+              src="./src/images/js.svg"
+              alt="JavaScript"
+              id="JavaScript"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#JavaScript">JavaScript</label>
+          </div>
+          <!-- Language: Golang -->
+          <div class="language-card">
+            <img
+              src="./src/images/golang.svg"
+              alt="Golang"
+              id="Golang"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#Golang">Golang</label>
+          </div>
+          <!-- Language: TypeScript -->
+          <div class="language-card">
+            <img
+              src="./src/images/ts.svg"
+              alt="TypeScript"
+              id="TypeScript"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#TypeScript">TypeScript</label>
+          </div>
+          <!-- Language: React -->
+          <div class="language-card">
+            <img
+              src="./src/images/react.svg"
+              alt="React"
+              id="React"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#React">React</label>
+          </div>
+          <!-- Language: MySQL -->
+          <div class="language-card">
+            <img
+              src="./src/images/mysql.svg"
+              alt="MySQL"
+              id="MySQL"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#MySQL">MySQL</label>
+          </div>
+          <!-- Language: HTML -->
+          <div class="language-card">
+            <img
+              src="./src/images/html.svg"
+              alt="HTML"
+              id="HTML"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#HTML">HTML</label>
+          </div>
+          <!-- Language: CSS -->
+          <div class="language-card">
+            <img
+              src="./src/images/css.svg"
+              alt="CSS"
+              id="CSS"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#CSS">CSS</label>
+          </div>
+          <!-- Language: JQuery -->
+          <div class="language-card">
+            <img
+              src="./src/images/jquery.svg"
+              alt="JQuery"
+              id="JQuery"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#JQuery">JQuery</label>
+          </div>
+          <!-- Language: Tailwind CSS -->
+          <div class="language-card">
+            <img
+              src="./src/images/tailwind.svg"
+              alt="Tailwind CSS"
+              id="Tailwind CSS"
+              width="100"
+              height="100"
+              draggable="false"
+              class="language-image"
+            />
+            <label for="#Tailwind CSS">Tailwind CSS</label>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        Made by
+        <a
+          href="https://github.com/nerdyfitzy"
+          target="_blank"
+          rel="noreferrer"
+          class="footer-link"
+          >Kaylee Fitzpatrick</a
+        >
+      </footer>
+
+      <!-- ContactModal (initially hidden like React when `shown === false`) -->
+      <div class="modal-background hidden" id="modalBackground">
+        <div class="modal-card" id="modal">
+          <h2 class="modal-title">Contact Me</h2>
+          <form action="" class="modal-form" id="contact-form">
+            <label for="#email-input">Your Email</label>
+            <input
+              class="modal-input"
+              type="email"
+              name="email"
+              id="email-input"
+            />
+
+            <label>Message</label>
+            <textarea
+              class="modal-textarea"
+              name="message"
+              id="message"
+            ></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+
+            <span class="error-text" id="contact-error"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const emailAddr = "fitzpatrickkayle9@gmail.com";
+        const modalBackground = document.getElementById("modalBackground");
+        const contactLink = document.getElementById("contact-me-link");
+        const navToggle = document.getElementById("mobile-nav-toggle");
+        const nav = document.getElementById("topbar-nav");
+        const copyBtn = document.getElementById("copy-email");
+        const contactForm = document.getElementById("contact-form");
+        const errorEl = document.getElementById("contact-error");
+        const emailInput = document.getElementById("email-input");
+        const messageInput = document.getElementById("message");
+
+        function setModalShown(shown) {
+          if (shown) modalBackground.classList.remove("hidden");
+          else modalBackground.classList.add("hidden");
+        }
+
+        copyBtn.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText(emailAddr);
+          } catch (e) {
+            // Fallback if clipboard permissions are blocked
+            window.prompt("Copy email:", emailAddr);
+          }
+        });
+
+        navToggle.addEventListener("click", () => {
+          const isOpen = nav.classList.contains("open");
+          if (isOpen) {
+            nav.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          } else {
+            nav.classList.add("open");
+            navToggle.setAttribute("aria-expanded", "true");
+          }
+        });
+
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+
+        contactLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          const shown = modalBackground.classList.contains("hidden") === false;
+          setModalShown(!shown);
+          if (shown) {
+            emailInput.value = "";
+            messageInput.value = "";
+            errorEl.textContent = "";
+          }
+        });
+
+        modalBackground.addEventListener("click", (e) => {
+          if (e.target && e.target.getAttribute("id") === "modalBackground") {
+            setModalShown(false);
+            emailInput.value = "";
+            messageInput.value = "";
+            errorEl.textContent = "";
+          }
+        });
+
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const email = emailInput.value.trim();
+          const message = messageInput.value.trim();
+
+          if (email === "" || message === "") {
+            errorEl.textContent = "Please do not leave fields blank";
+            return;
+          }
+
+          // No backend in this static HTML. Close the modal (structure/styling remains identical).
+          setModalShown(false);
+          emailInput.value = "";
+          messageInput.value = "";
+          errorEl.textContent = "";
+        });
+      })();
+    </script>
+  </body>
+</html>
