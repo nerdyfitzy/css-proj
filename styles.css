@@ -48,7 +48,6 @@ body {
   display: none !important;
 }
 
-/* App layout */
 .app {
   display: flex;
   flex-direction: column;
@@ -110,7 +109,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Tooltip */
 .tooltip {
   position: relative;
   display: flex;
@@ -122,7 +120,7 @@ body {
   top: 2.5rem;
   transform: scale(0);
   transition: transform 300ms ease-in-out;
-  background: #374151; /* gray-800 */
+  background: #374151;
   padding: 0.5rem 0.5rem;
   font-size: 0.75rem;
   color: #fff;
@@ -149,11 +147,11 @@ body {
 }
 
 .icon-button:hover {
-  background: #9ca3af; /* gray-400 */
+  background: #9ca3af;
 }
 
 .icon-button:active {
-  background: #6b7280; /* gray-500 */
+  background: #6b7280;
 }
 
 .github-link {
@@ -162,7 +160,6 @@ body {
   top: 0.25rem;
 }
 
-/* Hero */
 .hero {
   width: 100%;
   height: 45vh;
@@ -176,7 +173,7 @@ body {
 
 .hero-title {
   color: var(--periwinkle);
-  font-size: 2.25rem; /* text-4xl */
+  font-size: 2.25rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
 }
@@ -184,45 +181,43 @@ body {
 .hero-text {
   color: var(--text-slate-300);
   width: 58.3333%;
-  font-size: 1.5rem; /* text-2xl */
+  font-size: 1.5rem;
   margin: 0;
 }
 
-/* Sections */
 .section {
   width: 100%;
-  margin-bottom: 5rem; /* mb-20 */
+  margin-bottom: 5rem;
 }
 
 .section-title {
   transform: translateX(6rem);
   display: inline-block;
-  margin: 0 0 3.5rem 0; /* mb-14 */
-  padding-right: 2.5rem; /* pr-10 */
-  padding-bottom: 0.5rem; /* pb-2 */
+  margin: 0 0 3.5rem 0;
+  padding-right: 2.5rem;
+  padding-bottom: 0.5rem;
   color: var(--periwinkle);
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
   font-weight: 700;
   border-bottom: 1px solid var(--border-default);
 }
 
-/* Projects */
 .projects-row {
   display: grid;
-  gap: 1rem; /* gap-4 */
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   justify-items: center;
 }
 
 .project-card {
   width: 100%;
-  max-width: 24rem; /* keep original card size while allowing shrink */
-  padding: 1rem; /* p-4 */
+  max-width: 24rem;
+  padding: 1rem;
   background: var(--hooker-green);
-  border-radius: 0.5rem; /* rounded-lg */
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem; /* gap-3 */
+  gap: 0.75rem;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.55);
@@ -231,12 +226,12 @@ body {
 .project-title {
   color: #fff;
   font-weight: 700;
-  font-size: 1.125rem; /* font-lg from inline override */
+  font-size: 1.125rem;
   margin: 0;
 }
 
 .project-image-wrap {
-  min-height: 14rem; /* min-h-56 */
+  min-height: 14rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -251,7 +246,7 @@ body {
 
 .project-desc {
   border-top: 1px solid var(--border-default);
-  padding-top: 1rem; /* pt-4 */
+  padding-top: 1rem;
   text-align: center;
   margin: 0;
 }
@@ -261,12 +256,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 2.5rem; /* px-10 */
+  padding: 0 2.5rem;
   flex-wrap: wrap;
 }
 
 .project-github {
-  padding: 0.5rem; /* p-2 */
+  padding: 0.5rem;
   border-radius: 0.5rem;
   min-width: max-content;
   min-height: max-content;
@@ -280,7 +275,64 @@ body {
   background: #6b7280;
 }
 
-/* Skills */
+.testimonials-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: center;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 24rem;
+  margin: 0;
+  padding: 1.25rem 1.25rem;
+  background: var(--dark-green);
+  border: 1px solid var(--border-default);
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+}
+
+.testimonial-quote {
+  margin: 0 0 1rem 0;
+  color: var(--text-slate-300);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.testimonial-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.testimonial-name {
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.testimonial-meta {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.testimonial-project-tag {
+  margin: 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-default);
+  font-size: 0.875rem;
+  color: var(--text-slate-300);
+}
+
+.testimonial-project-tag strong {
+  color: var(--periwinkle);
+  font-weight: 700;
+}
+
 .skills-row {
   width: 100%;
   display: flex;
@@ -297,18 +349,17 @@ body {
   text-align: center;
   justify-content: space-around;
   color: #fff;
-  font-size: 1.25rem; /* text-xl */
+  font-size: 1.25rem;
 }
 
 .language-image {
-  margin-bottom: 1rem; /* mb-4 */
+  margin-bottom: 1rem;
   display: block;
 }
 
-/* Footer */
 .footer {
   width: 100%;
-  height: 5rem; /* h-20 */
+  height: 5rem;
   background: var(--footer-emerald-900);
   color: #fff;
   text-align: center;
@@ -326,7 +377,6 @@ body {
   text-decoration: underline;
 }
 
-/* Modal */
 @keyframes flyin {
   0% {
     transform: translateY(200%);
@@ -338,7 +388,7 @@ body {
 
 .modal-background {
   width: 100%;
-  height: 100vh; /* h-screen */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,7 +486,7 @@ body {
 
   .section-title {
     font-size: 1.5rem;
-    margin-bottom: 2.25rem; /* smaller than mb-14 */
+    margin-bottom: 2.25rem;
   }
 
   .project-card {
@@ -508,26 +558,39 @@ body {
 }
 
 .modal-card {
-  width: 40%; /* w-2/5 */
-  height: 41.6667%; /* h-5/12 */
+  width: min(28rem, calc(100vw - 2rem));
+  height: auto;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 0.375rem; /* rounded-md */
+  box-sizing: border-box;
+  border-radius: 0.375rem;
   z-index: 50;
-  padding: 2rem 2.5rem; /* px-10 py-8 */
+  padding: 2rem 2.5rem;
   background: linear-gradient(170.6deg, #292431 7.78%, #312b3b 92.9%);
   animation: flyin 0.2s ease-out;
+  overflow-y: auto;
+  color: #fff;
 }
 
 .modal-title {
-  font-size: 1.875rem; /* text-3xl */
-  margin: 0 0 1rem 0; /* mb-4 */
+  font-size: 1.875rem;
+  margin: 0 0 1rem 0;
+  color: #fff;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.modal-card label {
+  color: #fff;
+  font-size: 0.875rem;
 }
 
 .field-label {
@@ -535,43 +598,52 @@ body {
 }
 
 .modal-input {
-  color: #000;
-  border-radius: 0.5rem; /* rounded-lg */
-  margin-bottom: 1rem; /* mb-4 */
-  height: 3rem; /* h-12 */
-  width: 18rem; /* w-72 */
+  color: #111;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 0;
+  height: 3rem;
+  width: 100%;
+  max-width: 100%;
   text-align: left;
-  padding: 0 1rem; /* px-4 */
-  font-size: 0.75rem; /* text-xs */
-  font-weight: 500; /* font-medium */
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   outline: none;
-  border: 1px solid transparent;
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
 }
 
 .modal-textarea {
-  color: #000;
-  border-radius: 0.5rem; /* rounded-lg */
-  resize: none;
-  margin-bottom: 2.5rem; /* mb-10 */
-  height: 6rem; /* h-24 */
-  width: 18rem; /* match input width */
+  color: #111;
+  background: #fff;
+  border-radius: 0.5rem;
+  resize: vertical;
+  margin-bottom: 0;
+  min-height: 6rem;
+  width: 100%;
+  max-width: 100%;
   text-align: left;
-  padding: 1rem; /* p-4 */
-  font-size: 0.75rem; /* text-xs */
+  padding: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   outline: none;
-  border: 1px solid transparent;
+  border: 1px solid #d1d5db;
   box-sizing: border-box;
 }
 
 .submit-button {
   background: var(--periwinkle);
-  width: 6rem; /* w-24 */
-  height: 3rem; /* h-12 */
-  border-radius: 0.5rem; /* rounded-lg */
+  color: #fff;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
 }
 
 .submit-button:hover {
@@ -583,12 +655,12 @@ body {
 }
 
 .error-text {
-  color: #ef4444; /* red-500 */
-  margin-top: 1.25rem; /* mt-5 */
+  color: #fecaca;
+  margin-top: 0.75rem;
   min-height: 1em;
+  font-size: 0.875rem;
 }
 
-/* Ensure modal remains mobile-friendly (overrides placed at end of file) */
 @media (max-width: 640px) {
   .modal-card {
     width: 92%;
